@@ -9,3 +9,10 @@ body {
     background-image: -webkit-linear-gradient(rgb(170, 65, 65), rgb(20,20,20), rgb(59,153,145));
     min-height: 800px;
 }
+
+#game {
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    background: url(bg1.jp);
+}
