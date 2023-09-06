@@ -48,3 +48,17 @@ body {
     top: -500px;
     animation: block 2s linear infinite;
 }
+
+#bird {
+    position: fixed;
+    top: 100px;
+    height: 50px;
+    width: 50px;
+}
+
+#bird img {
+    height: 50px;
+    width: 50px;
+    
+
+}
