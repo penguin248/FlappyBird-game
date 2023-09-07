@@ -28,3 +28,18 @@ var fall = setInterval (function () {
         score = 0;
     }
 },10)
+
+window.addEventListener ("keydown", hop)
+
+function hop () {
+    jumping = 1;
+    var birdTop = parseInt(window.getComputedStyle (bird).getPropertyPriority ("top"))
+    if (birdTop > 6) {
+        bird.style.top = (birdTop -60) + "px";
+
+    }
+
+    setTimeout (function () {
+        jumping = 0;
+    }, 100)
+}
