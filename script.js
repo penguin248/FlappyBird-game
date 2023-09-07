@@ -7,9 +7,11 @@ var jumping = 0;
 
 
 hole.addEventListener ("animationiteration", RanHole)
+
 function RanHole () {
     var random = -((Math.random()*350)+150)
     hole.style.top = random+"px";
+    score++;
 }
 
 var fall = setInterval (function () {
@@ -29,11 +31,12 @@ var fall = setInterval (function () {
     }
 },10)
 
+
 window.addEventListener ("keydown", hop)
 
 function hop () {
     jumping = 1;
-    var birdTop = parseInt(window.getComputedStyle (bird).getPropertyPriority ("top"))
+    var birdTop = parseInt(window.getComputedStyle (bird).getPropertyValue ("top"))
     if (birdTop > 6) {
         bird.style.top = (birdTop -60) + "px";
 
@@ -42,4 +45,4 @@ function hop () {
     setTimeout (function () {
         jumping = 0;
     }, 100)
-}
+} 
