@@ -14,7 +14,7 @@ body {
     height: 500px;
     width: 400px;
     border: 1px solid black;
-    background: url(1.jpg);
+    background: url(Images/1.jpg);
     background-size: cover;
     margin: 1rem auto;
     overflow: hidden;
